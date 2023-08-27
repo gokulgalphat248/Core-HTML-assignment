@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)http://127.0.0.1:5500/extensions/orderedlist.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tags</title>
+</head>
+<body>
+  <h1> Common tags</h1>
+    <b>1.Heading tag </b><br>
+       Headings are used to define the titles or subtitles of a web page or a section of content.
+      For Example, look into the below wiki page, how headings and subheadings appear in a web page.
+   <br><b> 2. paragraph</b><br>
+   Paragraph tag is used to represent a piece of text that forms a distinct block of content. In HTML, each 
+   paragraph is put inside the <br>
+   <b>3.div</b><br>
+   Div creates a container or a division 4ithin a 4eb page that can be used to group other HTML elements, 
+such as text, images, #orms, and other HTML tags, into a logical section or a block.
+The <div> tag has no semantic meaning or #unction, but it allo4s developers to appl7 st7les, scripts, or 
+other attributes to a group o# elements as a unit.
+<b> tags table</b>
+<table border="3">
+   <tbody><tr><th aline="center" width="250"> Tag class</th>
+   <th aline="center" width="250"> Tags </th>
+   <th aline="center" width="250"> Description</th>
+   </tr><tr>
+      <td aline="center"> Formating test </td>
+      <td aline="center"> b,s,l,u,etc.</td>
+      <td> for text fomating ,bold,strikethrough, italic,underline. </td>
+   </tr>
+   <tr>
+      <td aline="center"> hyperlinks</td>
+      <td aline="center"> a</td>
+      <td> insert hyperlinks to interlink pages.</td>
+   </tr>
+   <tr> 
+      <td aline="center"> Table</td>
+      <td aline="center"> table,tr,td,th,etc.</td>
+      <td> to arrange data in rows and columns.</td>
+   </tr>
+   <tr>
+      <td aline="center"> lists</td>
+      <td aline="center"> ul,ol,tl</td>
+      <td> t0 arrange data in the forms of a list.</td>
+   </tr>
+   <tr>
+      <td aline="center"> Forms</td>
+      <td aline="center"> form,input,etc.</td>
+      <td>  to take input from the user and submit it to the server.</td>
+   </tr>
+   <tr>
+      <td aline="center"> Embed media</td>
+      <td aline="center"> img, audio, video etc.</td>
+      <td> to include media in html doc.</td>
+   </tr>
+   <tr>
+      <td aline="center"> structuring tags</td>
+      <td aline="center"> div, nav, header, main, section etc. </td>
+      <td> to give the web page a structure.</td>
+   </tr>
+</tbody></table>
+
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</div></body></html>
